@@ -11,7 +11,7 @@
         "test": "turbo run test --parallel",
         "publint": "node scripts/publint.js",
         "pkg-size": "node scripts/pkgsize.js",
-        "publish-packages": "turbo run build test publint pkg-size --filter=\"./packages/*\" && changeset version && changeset publish"
+        "publish-packages": "turbo run build test --filter=\"./packages/*\" && npm run publint && npm run pkg-size && changeset version && changeset publish"
     },
     "devDependencies": {
         "@changesets/cli": "^2.27.10",
