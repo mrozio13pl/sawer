@@ -31,9 +31,7 @@
         "@sawerjs/core": "workspace:*",
         "@sawerjs/load-config": "workspace:*",
         "@sawerjs/types": "workspace:*",
-        "@sawerjs/utils": "workspace:*",
-        "esbuild": "^0.24.0",
-        "rollup": "^4.28.1"
+        "@sawerjs/utils": "workspace:*"
     },
     "devDependencies": {
         "@sawerjs/tsconfig": "workspace:*",

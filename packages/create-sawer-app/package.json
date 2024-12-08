@@ -34,7 +34,6 @@
         "package-manager-detector": "^0.2.7",
         "picocolors": "^1.1.1",
         "pkgroll": "^2.5.1",
-        "sawer": "workspace:*",
         "strip-comments": "^2.0.1",
         "tiny-update-notifier": "^2.0.0",
         "tinyexec": "^0.3.1",
