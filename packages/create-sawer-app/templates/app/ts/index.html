@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sawer Template</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div
+            style="
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            ">
+            <h1>Sawer Template for Typescript</h1>
+            <p style="text-align: center">
+                A simple template for Sawer.
+                <br />
+                This file is only intended for API testing.
+            </p>
+            <div>
+                <input
+                    type="text"
+                    placeholder="Add a user..."
+                    id="user-input" />
+                <button onclick="addUser()">Add</button>
+            </div>
+            <div id="users">Loading...</div>
+        </div>
+        <script defer>
+            async function addUser() {
+                const name = document.getElementById('user-input').value;
+                const res = await fetch('/api/user', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ id: 1, name }),
+                });
+                document.getElementById('user-input').value = '';
+
+                const data = await res.json();
+                await fetchUsers();
+            }
+
+            async function fetchUsers() {
+                const res = await fetch('/api/user');
+                const data = await res.json();
+                const users = document.getElementById('users');
+                users.innerHTML = data.users
+                    .map((user) => `<p>- ${user.name}</p>`)
+                    .join('');
+            }
+
+            fetchUsers();
+        </script>
+    </body>
+</html>

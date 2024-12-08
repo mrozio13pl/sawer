@@ -1,0 +1,46 @@
+{
+    "name": "@sawerjs/dev",
+    "version": "0.0.0",
+    "type": "module",
+    "description": "Development helpers for sawer",
+    "main": "./dist/index.js",
+    "scripts": {
+        "build": "pkgroll --sourcemap",
+        "dev": "pkgroll --watch"
+    },
+    "homepage": "https://github.com/mrozio13pl/sawer/blob/main/packages/development",
+    "repository": "mrozio13pl/sawer",
+    "author": "mrozio13pl",
+    "license": "MIT",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/index.d.ts",
+                "default": "./dist/index.js"
+            },
+            "require": {
+                "types": "./dist/index.d.cts",
+                "default": "./dist/index.cjs"
+            }
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@parcel/watcher": "^2.5.0",
+        "@sawerjs/config": "workspace:*",
+        "@sawerjs/core": "workspace:*",
+        "@sawerjs/load-config": "workspace:*",
+        "@sawerjs/load-file": "workspace:*",
+        "@sawerjs/types": "workspace:*"
+    },
+    "devDependencies": {
+        "@sawerjs/tsconfig": "workspace:*",
+        "@types/node": "^22.10.1",
+        "path-equal": "^1.2.5",
+        "pkgroll": "^2.5.1",
+        "tiny-typed-emitter": "^2.1.0",
+        "typescript": "^5.7.2"
+    }
+}

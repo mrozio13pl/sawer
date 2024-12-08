@@ -1,0 +1,43 @@
+{
+    "name": "create-sawer-app",
+    "version": "0.0.0",
+    "description": "CLI for creating sawer apps",
+    "type": "module",
+    "bin": {
+        "create-sawer-app": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "pkgroll --minify",
+        "dev": "pkgroll --watch --minify"
+    },
+    "homepage": "https://github.com/mrozio13pl/sawer/blob/main/packages/create-sawer-app",
+    "repository": "mrozio13pl/sawer",
+    "author": "mrozio13pl",
+    "license": "MIT",
+    "engines": {
+        "node": ">=18"
+    },
+    "files": [
+        "dist",
+        "templates"
+    ],
+    "devDependencies": {
+        "@clack/prompts": "^0.8.2",
+        "@npm/types": "^2.0.0",
+        "@sawerjs/logger": "workspace:*",
+        "@sawerjs/tsconfig": "workspace:*",
+        "@types/node": "^22.10.1",
+        "@types/strip-comments": "^2.0.4",
+        "cleye": "^1.3.2",
+        "fdir": "^6.4.2",
+        "is-interactive": "^2.0.0",
+        "package-manager-detector": "^0.2.7",
+        "picocolors": "^1.1.1",
+        "pkgroll": "^2.5.1",
+        "sawer": "workspace:*",
+        "strip-comments": "^2.0.1",
+        "tiny-update-notifier": "^2.0.0",
+        "tinyexec": "^0.3.1",
+        "typescript": "^5.7.2"
+    }
+}

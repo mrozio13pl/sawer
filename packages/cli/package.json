@@ -1,0 +1,39 @@
+{
+    "name": "sawer-cli",
+    "version": "0.0.0",
+    "type": "module",
+    "description": "Sawer CLI",
+    "bin": {
+        "sawer": "./dist/index.js"
+    },
+    "scripts": {
+        "build": "pkgroll --clean-dist --sourcemap",
+        "dev": "pkgroll --watch --clean-dist"
+    },
+    "homepage": "https://github.com/mrozio13pl/sawer/blob/main/packages/cli",
+    "repository": "mrozio13pl/sawer",
+    "author": "mrozio13pl",
+    "license": "MIT",
+    "engines": {
+        "node": ">=18"
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@sawerjs/build": "workspace:*",
+        "@sawerjs/dev": "workspace:*",
+        "@sawerjs/load-config": "workspace:*",
+        "@sawerjs/logger": "workspace:*",
+        "picocolors": "^1.1.1"
+    },
+    "devDependencies": {
+        "@sawerjs/tsconfig": "workspace:*",
+        "@sawerjs/types": "workspace:*",
+        "@types/node": "^22.10.1",
+        "cleye": "^1.3.2",
+        "pkgroll": "^2.5.1",
+        "pretty-error": "^4.0.0",
+        "typescript": "^5.7.2"
+    }
+}

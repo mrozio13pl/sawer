@@ -1,0 +1,27 @@
+{
+    "name": "sawer-monorepo",
+    "version": "0.0.0",
+    "author": "mrozio13pl",
+    "license": "MIT",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev --parallel --filter=\"./packages/*\"",
+        "test": "turbo run test --parallel",
+        "publint": "node scripts/publint.js",
+        "pkg-size": "node scripts/pkgsize.js",
+        "publish-packages": "turbo run build test publint pkg-size --filter=\"./packages/*\" && changeset version && changeset publish"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.27.10",
+        "@types/node": "^22.10.1",
+        "byte-size": "^9.0.1",
+        "columnify": "^1.6.0",
+        "pkg-size": "^2.4.0",
+        "publint": "^0.2.12",
+        "turbo": "^2.3.3",
+        "typescript": "^5.7.2"
+    },
+    "packageManager": "pnpm@9.0.0"
+}

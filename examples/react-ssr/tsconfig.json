@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "lib": ["es2023", "dom"],
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "target": "es2022",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "baseUrl": "./",
+        "jsx": "react-jsx",
+        "paths": {
+            "@/*": ["src/*"],
+            "@server/*": ["server/*"]
+        }
+    },
+    "include": ["src", "app", "sawer.config.ts"],
+    "exclude": ["node_modules"]
+}

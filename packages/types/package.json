@@ -1,0 +1,28 @@
+{
+    "name": "@sawerjs/types",
+    "version": "0.0.0",
+    "type": "module",
+    "description": "Types for sawer",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "pkgroll --sourcemap",
+        "dev": "pkgroll --watch"
+    },
+    "homepage": "https://github.com/mrozio13pl/sawer/blob/main/packages/types",
+    "repository": "mrozio13pl/sawer",
+    "author": "mrozio13pl",
+    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "rollup": "^4.28.1",
+        "rollup-plugin-esbuild": "^6.1.1"
+    },
+    "devDependencies": {
+        "@sawerjs/tsconfig": "workspace:*",
+        "@types/node": "^22.10.1",
+        "pkgroll": "^2.5.1",
+        "typescript": "^5.7.2"
+    }
+}

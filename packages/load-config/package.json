@@ -1,0 +1,48 @@
+{
+    "name": "@sawerjs/load-config",
+    "version": "0.0.0",
+    "description": "Load sawer config from file.",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "type": "module",
+    "scripts": {
+        "build": "pkgroll --sourcemap",
+        "dev": "pkgroll --watch",
+        "test": "vitest run --coverage"
+    },
+    "homepage": "https://github.com/mrozio13pl/sawer/blob/main/packages/load-config",
+    "repository": "mrozio13pl/sawer",
+    "author": "mrozio13pl",
+    "license": "MIT",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/index.d.ts",
+                "default": "./dist/index.js"
+            },
+            "require": {
+                "types": "./dist/index.d.cts",
+                "default": "./dist/index.cjs"
+            }
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@sawerjs/config": "workspace:*",
+        "@sawerjs/load-file": "workspace:*",
+        "@sawerjs/types": "workspace:*"
+    },
+    "devDependencies": {
+        "@npm/types": "^2.0.0",
+        "@sawerjs/tsconfig": "workspace:*",
+        "@sawerjs/utils": "workspace:*",
+        "@sawerjs/vite-config": "workspace:*",
+        "@types/node": "^22.10.1",
+        "@vitest/coverage-v8": "^2.1.8",
+        "pkgroll": "^2.5.1",
+        "typescript": "^5.7.2",
+        "vitest": "^2.1.8"
+    }
+}

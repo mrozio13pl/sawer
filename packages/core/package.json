@@ -1,0 +1,63 @@
+{
+    "name": "@sawerjs/core",
+    "version": "0.0.0",
+    "description": "Core functions for sawer",
+    "type": "module",
+    "main": "./dist/index.js",
+    "scripts": {
+        "build": "pkgroll --sourcemap",
+        "dev": "pkgroll --watch --sourcemap"
+    },
+    "homepage": "https://github.com/mrozio13pl/sawer/blob/main/packages/core",
+    "repository": "mrozio13pl/sawer",
+    "author": "mrozio13pl",
+    "license": "MIT",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/index.d.ts",
+                "default": "./dist/index.js"
+            },
+            "require": {
+                "types": "./dist/index.d.cts",
+                "default": "./dist/index.cjs"
+            }
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@sawerjs/config": "workspace:*",
+        "@sawerjs/load-file": "workspace:*",
+        "@sawerjs/types": "workspace:*",
+        "@sawerjs/utils": "workspace:*",
+        "acorn": "^8.14.0",
+        "defu": "^6.1.4",
+        "detective": "^5.2.1",
+        "esbuild": "^0.24.0",
+        "regexparam": "^3.0.0",
+        "rollup": "^4.28.1",
+        "rollup-plugin-esbuild": "^6.1.1"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^28.0.1",
+        "@rollup/plugin-dynamic-import-vars": "^2.1.5",
+        "@rollup/plugin-json": "^6.1.0",
+        "@rollup/plugin-node-resolve": "^15.3.0",
+        "@sawerjs/tsconfig": "workspace:*",
+        "@types/detective": "^5.1.5",
+        "@types/estree": "^1.0.6",
+        "@types/node": "^22.10.1",
+        "fdir": "^6.4.2",
+        "mlly": "^1.7.3",
+        "nanoid": "^5.0.9",
+        "pkgroll": "^2.5.1",
+        "typescript": "^5.7.2",
+        "ufo": "^1.5.4",
+        "uuid": "^11.0.3"
+    },
+    "overrides": {
+        "detective/acorn": "^8.14.0"
+    }
+}

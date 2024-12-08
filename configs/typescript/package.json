@@ -1,0 +1,8 @@
+{
+    "name": "@sawerjs/tsconfig",
+    "type": "module",
+    "private": true,
+    "dependencies": {
+        "@tsconfig/node18": "^18.2.4"
+    }
+}

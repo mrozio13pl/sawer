@@ -1,0 +1,38 @@
+{
+    "name": "react-ssr",
+    "description": "Sawer app bootstrapped with create-sawer-app",
+    "version": "0.0.0",
+    "type": "module",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "start": "sawer start",
+        "build": "sawer build",
+        "sawer:dev": "nodemon --watch ./app --ext js,ts,jsx,tsx --exec \"npm run build && node ./index.js\"",
+        "dev": "concurrently -n \"client,server\" \"vite dev\" \"npm run sawer:dev\""
+    },
+    "dependencies": {
+        "ccount": "^2.0.1",
+        "ky": "^1.7.2",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "react-hot-toast": "^2.4.1",
+        "sawer": "workspace:*",
+        "shiki": "^1.24.0",
+        "zod": "^3.23.8",
+        "zwitch": "^2.0.4"
+    },
+    "devDependencies": {
+        "@types/node": "^22",
+        "@types/react": "^19.0.1",
+        "@types/react-dom": "^19.0.1",
+        "@vitejs/plugin-react": "^4.3.4",
+        "concurrently": "^9.1.0",
+        "nodemon": "^3.1.7",
+        "sawer-cli": "workspace:*",
+        "typescript": "^5",
+        "unocss": "^0.65.1",
+        "vite": "^6.0.3",
+        "vite-tsconfig-paths": "^5.1.4"
+    }
+}
