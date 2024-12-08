@@ -1,6 +1,6 @@
 <div align="center">
     <img src="./sawer.png" alt="sawer" />
-    <p>sawer <i>(SAH-vehr)</i></p>
+    <p>sawer <i>/sah-ver/</i></p>
     <p>A minimalistic, pure HTTP framework for backend applications 🕳</p>
     <a href="https://npm.im/sawer">
         <img src="https://img.shields.io/npm/v/sawer?style=flat-square&color=%23fff&label=sawer&labelColor=%23111" />
