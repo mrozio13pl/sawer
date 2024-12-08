@@ -1,6 +1,6 @@
 {
     "name": "@sawerjs/load-file",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Load Typescript & Javascript files for both commonjs and esm using swc.",
     "main": "./dist/index.cjs",
     "module": "./dist/index.js",

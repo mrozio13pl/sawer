@@ -1,6 +1,6 @@
 {
     "name": "@sawerjs/core",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Core functions for sawer",
     "type": "module",
     "main": "./dist/index.js",

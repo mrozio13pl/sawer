@@ -1,6 +1,6 @@
 {
     "name": "@sawerjs/load-config",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Load sawer config from file.",
     "main": "./dist/index.cjs",
     "module": "./dist/index.js",

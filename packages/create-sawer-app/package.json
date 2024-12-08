@@ -1,6 +1,6 @@
 {
     "name": "create-sawer-app",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "CLI for creating sawer apps",
     "type": "module",
     "bin": {
