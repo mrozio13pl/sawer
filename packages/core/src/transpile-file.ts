@@ -83,6 +83,8 @@ export async function transpileFile(config: SawerConfig, tempDir: string, routeP
         const require = Module.createRequire(pathToFileURL(routePath).toString());
 
         for (const req of reqs) {
+            if (Module.isBuiltin(req)) continue;
+
             const resolved = require.resolve(req).replace(/\\/g, '/');
 
             imports.set(req, resolved);
@@ -93,6 +95,8 @@ export async function transpileFile(config: SawerConfig, tempDir: string, routeP
     const imps = await findImportsAndReexports(code);
 
     for (const imp of imps) {
+        if (Module.isBuiltin(imp.specifier || '')) continue;
+
         const resolved = await resolveImports(imp.code, {
             url: joinCwd(routePath),
         });
