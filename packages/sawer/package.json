@@ -1,6 +1,6 @@
 {
     "name": "sawer",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "module",
     "description": "A minimalistic, pure HTTP framework for backend applications",
     "homepage": "https://github.com/mrozio13pl/sawer/blob/main/packages/sawer",
