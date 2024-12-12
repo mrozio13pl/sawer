@@ -182,6 +182,9 @@ importers:
       pretty-error:
         specifier: ^4.0.0
         version: 4.0.0
+      sawer:
+        specifier: workspace:*
+        version: link:../sawer
       typescript:
         specifier: ^5.7.2
         version: 5.7.2
